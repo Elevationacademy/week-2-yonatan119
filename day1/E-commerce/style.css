@@ -1,0 +1,16 @@
+body {
+    background-color: #607196;
+}
+.navigation {
+    display: inline-block;
+    margin-left: 80px;
+    color: #30011E;
+    font-size: larger;
+}
+#container{
+    /* position: absolute; */
+    /* left: 100px; */
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
