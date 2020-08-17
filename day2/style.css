@@ -1,0 +1,88 @@
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 17fr 1fr;
+    grid-template-areas: 
+    "s m"
+    "s f";
+
+}
+.maincontainer {
+grid-area: m;
+background-color: lightgrey;
+display: grid;
+grid-template-columns: 1fr,1fr;
+    grid-template-rows: repeat(5,1fr);
+    /* grid-template-areas: 
+    auto; */
+
+}
+.sidecontainer {
+    grid-area: s;
+    background-color: #8e44ad;
+}
+.footer {
+    grid-area: f;
+    background-color: #8e44ad;
+    display: grid;
+    grid-template-columns: 4fr,1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "i i i i b";
+}
+#button {
+    grid-area: b;
+    margin:auto;
+}
+#input {
+    grid-area: i;
+}
+.greytext {
+    display: grid;
+    background-color: #bdc3c7;
+    max-height: 25px;
+    max-width: fit-content;
+    padding-left:4px;
+    margin-left: 10px;
+    margin-top:10px;
+    text-justify: center;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "t ti";
+    align-self: center;
+}
+.greentext {
+    display: grid;
+    background-color: greenyellow;
+    max-height: 25px;
+    max-width: fit-content;
+    padding-right: 10px;
+    justify-self: end;
+    padding-left:4px;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "t ti";
+    align-self: center;
+}
+.time {
+    grid-area: ti;
+    padding-left:4px;
+    margin-left: 10px;
+    margin-top:10px;
+    font-size: 10px;
+}
+.sidecontainer {
+display: grid;
+}
+.friend {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-height: 19px;
+    background-color: #9b59b6;
+}
+#friends {
+    margin-left: 5px;
+}
